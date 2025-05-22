@@ -1,12 +1,18 @@
-# Assignment 1
+# Appointment Scheduling Module
 
-You will only need one file, ie, your node module, for this assignment.
+## Overview
+This Node.js module simulates a simple appointment scheduling system for healthcare clinics or hospitals. It supports creating, listing, cancelling, and rescheduling patient appointments using an in-memory array.
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+## Functions
+- `createAppointment(patientName, doctorName, dateTime)`
+- `getAllAppointments()`
+- `findAppointmentsByPatient(patientName)`
+- `cancelAppointment(id)`
+- `rescheduleAppointment(id, newDateTime)`
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
-
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-
-# References
-Provide the references that you have used to support your assignment. 
+## How to Use
+1. Clone this repo.
+2. Create a test script:
+```js
+const appt = require('./yourname_appointment_module');
+appt.createAppointment("John", "Dr. Lee", "2025-07-01T10:00");
