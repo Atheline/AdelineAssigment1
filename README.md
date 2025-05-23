@@ -68,7 +68,7 @@ console.log();
 console.log("Final Appointments List:");
 console.log(appt.getAllAppointments());
 console.log();
-
+```
 
 
 
@@ -83,10 +83,13 @@ console.log();
 | `rescheduleAppointment(id, newDateTime)`               | Updates the appointment date/time                       | `id` (number), `newDateTime` (string in ISO format)                              |
 
 
-#####4. How to run app.js
+### 4. How to run app.js
 
+
+```
 node app.js
+```
 
 
 References
-MyHealth Portal Singapore – https://www.healthhub.sg
+MyHealth Portal Singapore – [https://www.healthhub.sg]
