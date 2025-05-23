@@ -25,9 +25,11 @@ Create a testing file like `app.js` to try the module.
 **Example folder structure:**
 
 assignment1/
+
 ├── Adeline_appointment_module.js
 ├── app.js
 └── README.md
+
 
 ---
 
@@ -38,7 +40,7 @@ console.log("========================================");
 console.log("Welcome to the Healthcare Appointment App");
 console.log("========================================\n");
 
-const appt = require('./YourName_appointment.js');
+const appt = require('./Adeline_appointment_module.js');
 
 // Book new appointments
 console.log("Booking Appointments:");
@@ -67,15 +69,21 @@ console.log("Final Appointments List:");
 console.log(appt.getAllAppointments());
 console.log();
 
-3. Functions Available
-Function	Description	Parameters
-createAppointment(patientName, doctorName, dateTime)	Adds a new appointment to the system	patientName (string), doctorName (string), dateTime (string in ISO format)
-getAllAppointments()	Returns a list of all appointments	None
-findAppointmentsByPatient(patientName)	Finds appointments by patient's name (case insensitive)	patientName (string)
-cancelAppointment(id)	Cancels the appointment with the given ID	id (number)
-rescheduleAppointment(id, newDateTime)	Updates the appointment date/time	id (number), newDateTime (string in ISO format)
 
-4. How to run app.js
+
+
+
+### 3. Functions Available
+| Function                                               | Description                                             | Parameters                                                                       |
+| ------------------------------------------------------ | ------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `createAppointment(patientName, doctorName, dateTime)` | Adds a new appointment to the system                    | `patientName` (string), `doctorName` (string), `dateTime` (string in ISO format) |
+| `getAllAppointments()`                                 | Returns a list of all appointments                      | None                                                                             |
+| `findAppointmentsByPatient(patientName)`               | Finds appointments by patient's name (case insensitive) | `patientName` (string)                                                           |
+| `cancelAppointment(id)`                                | Cancels the appointment with the given ID               | `id` (number)                                                                    |
+| `rescheduleAppointment(id, newDateTime)`               | Updates the appointment date/time                       | `id` (number), `newDateTime` (string in ISO format)                              |
+
+
+#####4. How to run app.js
 
 node app.js
 
