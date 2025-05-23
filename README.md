@@ -13,7 +13,7 @@
 ## File Required
 Only one file is required for this assignment:
 
-`YourName_appointment.js` – This is my healthcare appointment scheduling Node.js module.
+`Adeline_appointment_module.js` – This is my healthcare appointment scheduling Node.js module.
 
 ## How to Use
 
