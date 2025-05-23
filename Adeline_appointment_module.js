@@ -1,4 +1,3 @@
-// yourname_appointment_module.js
 // This module manages patient appointments for a healthcare system.
 // Data is stored using arrays to simulate a simple database.
 
@@ -8,10 +7,10 @@ let nextId = 1;
 
 /**
  * Create a new appointment.
- * @param {string} patientName - Name of the patient.
- * @param {string} doctorName - Name of the doctor.
- * @param {string} dateTime - Appointment date and time (ISO format).
- * @returns {object} The created appointment.
+ *  patientName - Name of the patient.
+ * doctorName - Name of the doctor.
+ *  {string} dateTime - Appointment date and time (ISO format).
+ *  {object} The created appointment.
  */
 function createAppointment(patientName, doctorName, dateTime) {
   const newAppt = {
@@ -58,8 +57,8 @@ function cancelAppointment(id) {
 
 /**
  * Reschedule an appointment by ID.
- * @param {number} id - Appointment ID.
- * @param {string} newDateTime - New date and time (ISO format).
+ *  {number} id - Appointment ID.
+ *  {string} newDateTime - New date and time (ISO format).
  * @returns {object|string} Updated appointment or error message.
  */
 function rescheduleAppointment(id, newDateTime) {
